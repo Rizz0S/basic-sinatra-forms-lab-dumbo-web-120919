@@ -6,7 +6,9 @@
  </head>
  <body>
  
-
+    <% @team.each_with_index do |(postion, member), index| %>
+    <h2><%= "#{@titles[index]}: #{member}" %></h2>
+    <% end %>
 
  </body>
 </html>
